@@ -3,6 +3,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
+  <meta name="referrer" content="origin">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Social Padel Club Essen Turnier</title>
   <style>
@@ -10,7 +11,7 @@
     header { background-color: #2c3e50; color: white; padding: 20px; text-align: center; }
     main { padding: 20px; max-width: 600px; margin: auto; background: white; }
     label { display: block; margin-top: 15px; }
-    input { width: 100%; padding: 8px; margin-top: 5px; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 5px; }
     button { margin-top: 20px; padding: 10px; background: #27ae60; color: white; border: none; border-radius: 4px; cursor: pointer; }
     .footer { text-align: center; font-size: 0.8em; color: #777; margin: 30px 0; }
   </style>
@@ -23,13 +24,13 @@
   <main>
     <h2>Anmeldung</h2>
     <p>Teilnahmegebühr: 5,00 € pro Person (plus ggf. 3,00 € Platzgebühr)</p>
-    <form action="https://formspree.io/f/xvoeyvky" method="POST">
+    <form action="https://formspree.io/f/xwpobanb" method="POST">
       <label for="name">Spielername (Vor- und Nachname)</label>
-      <input type="text" name="name" id="name" required />
-      
+      <input type="text" id="name" name="name" required>
+
       <label for="phone">Handynummer</label>
-      <input type="tel" name="phone" id="phone" required />
-      
+      <input type="tel" id="phone" name="phone" required>
+
       <input type="hidden" name="_redirect" value="danke.html">
       <button type="submit">Anmelden</button>
     </form>
